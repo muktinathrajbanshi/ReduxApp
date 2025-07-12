@@ -13,7 +13,7 @@ body {
   align-items: center;
 }
 
-.conatiner {
+.container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -41,10 +41,13 @@ h4 {
   font-weight: bolder;
 }
 
-.conatiner .quantity {
+.container .quantity {
   margin-top: 2rem;
   display: flex;
   justify-content: center;
+  width: 9rem;
+  height: 3.5rem;
+  background-color: #b2bec3;
 }
 
 .quantity .quantity__minus {
@@ -52,23 +55,48 @@ h4 {
   justify-content: center;
   align-items: center;
   position: absolute;
-  margin-left: -2rem;
+  width: 3.5rem;
+  height: 3.5rem;
+  background-color: transparent;
+  margin-left: -6.9rem;
+  border: none;
 }
 
-.quantity .quantity__input value {
+.quantity .quantity__minus span {
+  font-size: 1.9rem;
+  cursor: pointer;
+}
+
+.quantity .quantity__input {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 25%;
-  height: 3rem;
-  position: relative;
+  text-align: center;
+  width: 3.2rem;
+  height: 2.7rem;
+  margin-top: 0.4rem;
+  margin-left: 0.4rem;
+  background: #fff;
+  color: #7f8c8d;
+  border: none;
+  font-weight: bolder;
+  font-size: 1.2rem;
 }
 
 .quantity .quantity__plus {
   display: flex;
   justify-content: center;
   align-items: center;
+  display: block;
   position: absolute;
-  /* width: 10%;
-  height: 3rem; */
+  background-color: transparent;
+  width: 3.5rem;
+  height: 3.5rem;
+  margin-right: -7rem;
+  border: none;
+}
+
+.quantity__plus span {
+  font-size: 1.5rem;
+  cursor: pointer;
 }

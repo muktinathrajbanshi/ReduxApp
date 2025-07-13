@@ -13,9 +13,9 @@ const App = () => {
         <h4>using React and Redux</h4>
         
         <div className="quantity">
-          <button className="quantity__minus" title="Decrement" onClick={() => dispatch(decNumber())}><span>-</span></button>
-          <input type="text" name="quantity" className="quantity__input" value={myState}  />
-          <button className="quantity__plus" title="Increment" onClick={ () =>dispatch(incNumber())}><span>+</span></button>
+          <button type="button" className="quantity__minus" title="Decrement" onClick={() => dispatch(decNumber())}><span>-</span></button>
+          <input type="text" name="quantity" className="quantity__input" value={myState} readOnly/>
+          <button type="button" className="quantity__plus" title="Increment" onClick={ () => dispatch(incNumber())}><span>+</span></button>
         </div>
       </div>
     </>

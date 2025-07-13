@@ -1,7 +1,9 @@
 import React from 'react';
 import "./App.css";
+import { useSelector, useDispatch } from 'react-redux';
 
 const App = () => {
+  const myState = useSelector((state) => state.changeTheNumber);
   return (
     <>
       <div className="container">
@@ -10,7 +12,7 @@ const App = () => {
         
         <div className="quantity">
           <button className="quantity__minus" title="Decrement"><span>-</span></button>
-          <input type="text" name="quantity" className="quantity__input" value="60" />
+          <input type="text" name="quantity" className="quantity__input" value={myState}  />
           <button className="quantity__plus" title="Increment"><span>+</span></button>
         </div>
       </div>

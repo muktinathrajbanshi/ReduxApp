@@ -10,3 +10,16 @@ export const decNumber = (num) => {
         payloadNum: num
     };
 };
+
+export const multNumber = (num) => {
+    return {
+        type:"MULTIPLY",
+        payload: num
+    };  
+};
+export const divNumber = (num) => {
+    return {
+        type:"DIVIDE",
+        payloadNum: num
+    };
+};

@@ -4,21 +4,24 @@
   box-sizing: border-box;
 }
 
-body {
+/* body {
   height: 100vh;
   width: 100vw;
   background-color: #ecf0f1;
   display: flex;
   justify-content: center;
   align-items: center;
-}
+} */
 
 .container {
+  height: 100vh;
+  width: 100vw;
+  background-color: #eff0f1;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: -10rem;
+  /* margin-top: -10rem;  */
 }
 
 h1 {
